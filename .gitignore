@@ -1,0 +1,10 @@
+.DS_Store
+dist/
+
+# LaTeX build artifacts
+CV/Ebraheem_CV/*.aux
+CV/Ebraheem_CV/*.fdb_latexmk
+CV/Ebraheem_CV/*.fls
+CV/Ebraheem_CV/*.log
+CV/Ebraheem_CV/*.out
+CV/Ebraheem_CV/*.synctex.gz
