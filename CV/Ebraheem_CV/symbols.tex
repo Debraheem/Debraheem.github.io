@@ -1,0 +1,95 @@
+% symbols for commonly used expressions in the paper.  The point is to define these for 
+% consistent notation.  Before defining or using an expression, check that someone hasn't defined it already.
+
+
+% hydro
+\newcommand{\dmbar}[1]{\ensuremath{\overline{dm}_{#1}}} % Mass of cell face
+\newcommand{\dm}[1]{\ensuremath{dm_{#1}}} % Mass of cell 
+\newcommand{\dr}[1]{\ensuremath{dr_{#1}}} % Radial extent of cell
+\newcommand{\mC}{\ensuremath{m_{\mathrm{C}}}}
+\newcommand{\rC}{\ensuremath{r_{\mathrm{C}}}}
+\newcommand{\Ncells}{\ensuremath{N_{\mathrm{target}}}}
+\newcommand{\timestep}{\ensuremath{\delta t}} % Numerical timestep
+
+
+\newcommand{\dt}{\ensuremath{\delta t}}
+\newcommand{\area}{\ensuremath{\mathcal{A}}}
+
+% energies
+\newcommand{\epsnuc}{\ensuremath{\epsilon_{\mathrm{nuc}}}} % Nuclear energy generation rate
+\newcommand{\epsgrav}{\ensuremath{\epsilon_{\mathrm{grav}}}} % Gravitational heating rate
+\newcommand{\epsnu}{\ensuremath{\epsilon_{\mathrm{\nu}}}} % Neutrino loss rate
+\newcommand{\epsextra}{\ensuremath{\epsilon_{\mathrm{extra}}}} % Extra heating or cooling
+\newcommand{\eblast}{\ensuremath{E_{\mathrm{blast}}}} % Blast wave energy
+\newcommand{\vhat}{\ensuremath{\hat{v}}}
+
+% Sne IIP 
+\newcommand{\Ni}{^{56}{\rm Ni}}
+\newcommand{\Eexp}{E_{\rm exp}}
+\newcommand{\MNi}{M_{\rm Ni}}
+\newcommand{\Lbol}{L_{\rm bol}}
+
+
+% convective boundaries
+\newcommand{\alphaMLT}{\ensuremath{\alpha_{\mathrm{MLT}}}}	% Mixing length parameter
+\newcommand{\grada}{\ensuremath{\nabla_{{\rm ad}}}}
+\newcommand{\gradc}{\ensuremath{\nabla_{{\rm comp}}}}
+\newcommand{\gradmu}{\ensuremath{\nabla_{\mu}}}
+\newcommand{\gradL}{\ensuremath{\nabla_{{\rm L}}}}
+\newcommand{\gradr}{\ensuremath{\nabla_{{\rm rad}}}}
+\newcommand{\gradT}{\ensuremath{\nabla_T}}
+\newcommand{\Teff}{\ensuremath{T_{\rm eff}}}	% Effective temperature
+\newcommand{\geff}{\ensuremath{g_{\rm eff}}}    % effective gravity (rotation)
+\newcommand{\fov}{\ensuremath{f_{\mathrm{ov}}}} % Convective overshoot parameter
+\newcommand{\Dconv}{\ensuremath{D_{\rm conv}}}
+\newcommand{\vconv}{\ensuremath{v_{\rm conv}}}
+\newcommand{\vprop}[1]{\ensuremath{v_{{\rm prop},#1}}}
+\newcommand{\mabund}{\ensuremath{m_{\rm a}}}
+\newcommand{\mcore}{\ensuremath{m_{\rm c}}}
+\newcommand{\BV}{Brunt-V\"{a}is\"{a}l\"{a}}
+\newcommand{\Mzams}{\ensuremath{M_{\rm ZAMS}}}
+\newcommand{\Xhyd}{\ensuremath{X}}
+\newcommand{\Yhel}{\ensuremath{Y}}
+\newcommand{\Zmet}{\ensuremath{Z}}
+\newcommand{\Xcore}{\ensuremath{\Xhyd_{\rm c}}}
+\newcommand{\Ycore}{\ensuremath{\Yhel_{\rm c}}}
+%\newcommand{\logg}{\ensuremath{\log g}} % Log surface gravity 
+\newcommand{\Tc}{\ensuremath{T_{\mathrm{c}}}} % Central temperature
+\newcommand{\rhoc}{\ensuremath{\rho_{\mathrm{c}}}} % Central density
+
+% rotation
+\newcommand\rot{\ensuremath{\Omega/\Omega_{{\rm crit}}}}         % rotation rate to critical rotation rate
+
+% diffusion
+\newcommand{\Domega}{\ensuremath{D_{\omega}}}
+\newcommand{\qe}{\ensuremath{q_{\rm e}}}
+
+% eos
+\newcommand{\gammaone}{\ensuremath{\Gamma_1}}
+%\newcommand{\Ye}{\ensuremath{Y_{\mathrm{e}}}} % Electron fraction
+\newcommand{\mue}{\ensuremath{\mu_{\mathrm{e}}}} % Electron chemical potential
+\newcommand{\chiT}{\chi_{T}}
+\newcommand{\chir}{\chi_{\rho}}
+
+% software
+\newcommand{\mesh}{\ensuremath{\Delta_{\mathrm{mesh}}}} % mesh delta coeff
+
+
+\newcommand{\logT}{\ensuremath{\log(T/\mathrm{K})}} % logT
+\newcommand{\logRho}{\ensuremath{\log(\rho/\grampercc)}} % logRho
+
+% nuclear
+\newcommand{\zbar}{\ensuremath{\bar{Z}}} % Zbar
+\newcommand{\abar}{\ensuremath{\bar{A}}} % Abar
+
+% mass change
+\newcommand{\eface}{\mathcal{E}_{\rm face}} % specific energy of material passing through a face
+\newcommand{\efacek}[1]{\mathcal{E}_{{\rm face},#1}} % specific energy of material passing through face k
+\newcommand{\Mstart}{{\rm start}} % start of step
+\newcommand{\Mmid}{{\rm mid}} % after mass changes, before timestep
+\newcommand{\stageI}{{\rm I}} % during mass changes
+\newcommand{\stageII}{{\rm II}} % during step
+\newcommand{\redis}{\rm redis} % redistributed
+\newcommand{\pass}{\rm pass} % passes through
+\newcommand{\dLdm}{the \code{dLdm}-form}
+\newcommand{\dedt}{the \code{dedt}-form}

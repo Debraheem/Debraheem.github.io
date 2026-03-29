@@ -1,0 +1,119 @@
+
+% \documentclass{aastex63}
+\documentclass[12pt]{article}
+
+\usepackage{times, amssymb, amsmath, epsfig, graphicx, wrapfig, xspace, hyperref}
+
+%\usepackage{amssymb, amsmath, epsfig, graphicx, wrapfig, xspace, hyperref}
+%\renewcommand*\familydefault{\sfdefault} 
+%\usepackage[scaled]{helvet}
+%\renewcommand\familydefault{\sfdefault} 
+%\usepackage[T1]{fontenc}
+
+
+
+% better links, no ugly green boxes
+\usepackage[dvipsnames,table]{xcolor}
+\hypersetup{
+  colorlinks   = true,     %Colours links instead of ugly boxes
+  urlcolor     = NavyBlue, %Colour for external hyperlinks
+  linkcolor    = NavyBlue, %Colour of internal links
+  citecolor   =  NavyBlue  %Colour of citations
+}
+
+\textwidth 6.7in
+\textheight 9.1in
+\hoffset = -0.10in
+\voffset = -0.1in
+\topmargin=0in
+\headheight=0.0in
+\headsep=0.0in
+\columnsep=3mm
+\oddsidemargin=0in
+\evensidemargin=0in
+\parskip=0.034cm
+
+
+%\topmargin -0.3in
+%\textheight 8.9in
+%\headsep 5pt
+%\textwidth 6.44in
+%\oddsidemargin 0in
+%\evensidemargin 0in
+%\parskip=0pt
+%%\tightenlines
+%\parskip=0pt
+
+\newcommand{\tightitems}{%%
+  \setlength{\topsep}{0pt}%%
+  \setlength{\itemsep}{6pt}%%
+  \setlength{\parsep}{0pt}%%
+  \setlength{\parskip}{0pt}%%
+}
+
+
+%\usepackage[square, comma, sort&compress][authoryear]{natbib}
+%\usepackage[square, comma]{natbib}
+%\usepackage[super]{natbib}
+\usepackage[numbers]{natbib}
+
+\setlength{\bibsep}{0.0pt}
+
+\newcommand{\arXiv}{\textit{arXiv}}
+\newcommand{\ap}{\textit{astro-ph}}
+\newcommand{\aap}{\textit{A\&A}}
+\newcommand{\actaa}{\textit{Acta Astron.}}
+\newcommand{\aapr}{\textit{The Astronomy and Astrophysics Review}}
+\newcommand{\an}{\textit{AN}}
+\newcommand{\aj}{\textit{AJ}}
+\newcommand{\apj}{\textit{ApJ}}
+\newcommand{\apjl}{\textit{ApJ}}
+\newcommand{\apjs}{\textit{ApJS}}
+\newcommand{\aaps}{\textit{A\&AS}}
+\newcommand{\apss}{\textit{Ap\&SS}}
+\newcommand{\araa}{\textit{ARA\&A}}
+\newcommand{\fcp}{\textit{Fundamentals of Cosmic Physics}}
+\newcommand{\mnras}{\textit{MNRAS}}
+\newcommand{\nat}{\textit{Nature}}
+\newcommand{\pasj}{\textit{PASJ}}
+\newcommand{\pasp}{\textit{PASP}}
+\newcommand{\physrep}{\textit{Phys.\ Reports}}
+\newcommand{\prc}{\textit{Phys.\ Rev.\ C.}} 
+\newcommand{\prd}{\textit{Phys.\ Rev.\ D.}} 
+\newcommand{\procspie}{\textit{Proc.\ SPIE}} 
+\newcommand{\sci}{\textit{Science}}
+
+
+% load macros
+\input{formatting.tex}
+\input{units.tex}
+\input{code.tex}
+\input{constants.tex}
+\input{vectors.tex}
+\input{derivatives.tex}
+\input{nuclides.tex}
+\input{symbols.tex}
+
+\newcommand{\kic}{KIC\,08626021\xspace}
+
+\begin{document}
+% \onecolumngrid 
+
+\section{hello}
+\citet{2016IAUFM..29B.532G}
+\citet{2020ApJ...893..133F}
+\citet{2021ApJ...910...24C}
+\citet{2021jwst.prop.2282C}
+\citet{2021ASPC..529...79G}
+\citet{2022ApJ...924...39M}
+\citet{2022ApJ...935...21C}
+\citet{2022ApJ...937..112F}
+\citet{2022ApJ...940L...1W}
+\citet{2023ApJ...954...51C}
+% \onecolumngrid{
+\bibliographystyle{aasjournal}
+\bibliography{ebs_pubs}
+
+% \begin{thebibliography}
+% \end{thebibliography}
+\end{document}
