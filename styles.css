@@ -232,6 +232,15 @@ code {
   color: var(--muted);
 }
 
+.hero-note {
+  margin: 0.55rem 0 0;
+  max-width: 43rem;
+  color: var(--soft);
+  font-size: 0.88rem;
+  line-height: 1.45;
+  font-style: italic;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
