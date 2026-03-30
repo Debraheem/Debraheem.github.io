@@ -8,6 +8,12 @@
       name="description"
       content="Ebraheem Khaled Farag | YCAA Prize Fellow working on stellar evolution, pulsation, massive stars, neutrinos, and MESA development."
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <script src="site-data.js" defer></script>
     <script src="site.js" defer></script>
@@ -38,6 +44,7 @@
               download="Ebraheem_Farag_CV.pdf"
               >Download CV</a
             >
+            <a class="button" href="https://github.com/Debraheem">GitHub</a>
             <a class="button" href="mailto:Ebraheem.Farag@yale.edu">Contact</a>
             <a
               class="button"
@@ -51,7 +58,8 @@
           <div class="hero-meta">
             <span>Department of Astronomy, Yale University</span>
             <span>New Haven, Connecticut</span>
-            <span>
+            <div class="hero-meta-break" aria-hidden="true"></div>
+            <span class="hero-meta-email">
               <a href="mailto:Ebraheem.Farag@yale.edu">Ebraheem.Farag@yale.edu</a>
             </span>
           </div>
@@ -68,68 +76,70 @@
       <main class="content-stack">
         <section class="panel" id="statement">
           <div class="section-heading">
-            <p class="eyebrow">Overview</p>
             <h2>Statement</h2>
           </div>
           <div id="statement-content" class="prose"></div>
         </section>
 
         <section class="split-layout">
-          <div class="panel">
-            <div class="section-heading">
-              <p class="eyebrow">Current Work</p>
-              <h2>Position</h2>
-            </div>
-            <div class="mini-stack">
-              <article class="detail-card">
-                <h3>YCAA Prize Fellow</h3>
-                <p>Yale Center for Astronomy &amp; Astrophysics</p>
-                <p>Yale University • 2024 - present</p>
-              </article>
+          <div class="split-cell">
+            <div class="panel split-panel">
+              <div class="section-heading">
+                <h2>Position</h2>
+              </div>
+              <div class="mini-stack">
+                <article class="detail-card">
+                  <h3>YCAA Prize Fellow</h3>
+                  <p>Yale Center for Astronomy &amp; Astrophysics</p>
+                  <p>Yale University • 2024 - present</p>
+                </article>
+              </div>
             </div>
           </div>
 
-          <div class="panel">
-            <div class="section-heading">
-              <p class="eyebrow">Training</p>
-              <h2>Education</h2>
-            </div>
-            <div class="mini-stack">
-              <article class="detail-card">
-                <h3>Ph.D. Astrophysics</h3>
-                <p>Arizona State University</p>
-                <p>School of Earth and Space Exploration • 2024</p>
-              </article>
-              <article class="detail-card">
-                <h3>B.S. Engineering Physics</h3>
-                <p>The Ohio State University</p>
-                <p>Mechanical Specialization • 2019</p>
-              </article>
+          <div class="split-cell">
+            <div class="panel split-panel">
+              <div class="section-heading">
+                <h2>Education</h2>
+              </div>
+              <div class="mini-stack education-grid">
+                <article class="detail-card">
+                  <h3>Ph.D. Astrophysics</h3>
+                  <p>Arizona State University</p>
+                  <p>School of Earth and Space Exploration • 2024</p>
+                </article>
+                <article class="detail-card">
+                  <h3>B.S. Engineering Physics</h3>
+                  <p>The Ohio State University</p>
+                  <p>Mechanical Specialization • 2019</p>
+                </article>
+              </div>
             </div>
           </div>
         </section>
 
         <section class="split-layout">
-          <div class="panel">
-            <div class="section-heading">
-              <p class="eyebrow">Research</p>
-              <h2>Interests</h2>
+          <div class="split-cell">
+            <div class="panel split-panel">
+              <div class="section-heading">
+                <h2>Interests</h2>
+              </div>
+              <ul id="interests-list" class="tag-list"></ul>
             </div>
-            <ul id="interests-list" class="tag-list"></ul>
           </div>
 
-          <div class="panel">
-            <div class="section-heading">
-              <p class="eyebrow">Advising</p>
-              <h2>Students Mentored/Advised</h2>
+          <div class="split-cell">
+            <div class="panel split-panel">
+              <div class="section-heading">
+                <h2>Students Mentored/Advised</h2>
+              </div>
+              <ul id="students-list" class="name-list students-grid"></ul>
             </div>
-            <ul id="students-list" class="name-list"></ul>
           </div>
         </section>
 
         <section class="panel" id="publications">
           <div class="section-heading">
-            <p class="eyebrow">Scholarship</p>
             <h2>Publications</h2>
           </div>
           <p class="section-note">
@@ -141,7 +151,6 @@
 
         <section class="panel" id="talks">
           <div class="section-heading">
-            <p class="eyebrow">Presentations</p>
             <h2>Talks &amp; Invited Presentations</h2>
           </div>
           <div id="talks-list" class="talk-stack"></div>

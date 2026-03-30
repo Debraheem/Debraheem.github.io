@@ -1,7 +1,7 @@
 // Generated from data/site_cv.yaml by scripts/generate_site_cv.rb. Do not edit manually.
 window.siteData = {
   "statementParagraphsHtml": [
-    "I am a Postdoctoral Research Fellow at Yale University and a software developer involved in improving the Modules for Experiments in Stellar Astrophysics (MESA) software framework, the most widely adopted platform for modeling stars. My work focuses on the maintenance and improvement of the <code>turb</code> (convection), <code>kap</code> (opacity), <code>rates</code> (nuclear reaction rates), and <code>net</code> (nuclear networks) modules and their associated test suites, including the massive star test cases. I am also an active member and primary maintainer of the public MESA mailing list, as well as a maintainer of the MESA Zenodo archive.",
+    "I am a Postdoctoral Research Fellow at Yale University and a software developer involved in improving the Modules for Experiments in Stellar Astrophysics (MESA) sofware instrument. My work focuses on the maintenance and improvement of the <code>turb</code> (convection), <code>kap</code> (opacity), <code>rates</code> (nuclear reaction rates), and <code>net</code> (nuclear networks) modules and their associated test suites, including the massive star test cases. I am also an active member and primary maintainer of the public MESA mailing list, as well as a maintainer of the MESA Zenodo archive.",
     "My research interests are broad, covering massive star evolution, neutrino emission, nuclear reaction rates, stellar opacity, classical pulsations, and 1D convection.",
     "I constantly pursue the ability to evolve any 1D stellar model of any mass through any phase and to any fate, real or imaginary."
   ],

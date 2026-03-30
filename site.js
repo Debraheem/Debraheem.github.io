@@ -58,18 +58,24 @@ function renderTalks() {
   if (!Array.isArray(talks)) return;
 
   container.innerHTML = talks
-    .map(
-      (talk) => `
+    .map((talk) => {
+      const [kind, ...locationParts] = talk.location.split(" • ");
+      const location = locationParts.join(" • ");
+
+      return `
         <article class="talk-card">
-          <div class="talk-top">
-            <h3 class="talk-title"><a href="${talk.url}">${talk.title}</a></h3>
-            <span class="talk-badge">${talk.badge}</span>
+          <p class="talk-year">${talk.badge}</p>
+          <div class="talk-content">
+            <div class="talk-top">
+              <h3 class="talk-title"><a href="${talk.url}">${talk.title}</a></h3>
+              <p class="talk-kind">${kind}</p>
+            </div>
+            <p class="talk-location">${location}</p>
+            ${talk.citationHtml ? `<p class="talk-citation">${talk.citationHtml}</p>` : ""}
           </div>
-          <p class="talk-location">${talk.location}</p>
-          ${talk.citationHtml ? `<p class="talk-citation">${talk.citationHtml}</p>` : ""}
         </article>
-      `
-    )
+      `;
+    })
     .join("");
 }
 
