@@ -1,5 +1,7 @@
 .DS_Store
 dist/
+do_not_commit/
+tmp/
 
 # LaTeX build artifacts
 CV/Ebraheem_CV/*.aux

@@ -148,14 +148,18 @@ end
 def build_publications_tex(data)
   groups = data.fetch("publications").fetch("groups")
   all_items = groups.flat_map { |group| group.fetch("items") }
+  peer_count = groups.select { |group| group["classification"] == "peer_reviewed" }
+                     .sum { |group| group.fetch("items").length }
+  other_count = groups.select { |group| group["classification"] == "non_peer_reviewed" }
+                      .sum { |group| group.fetch("items").length }
   first_count = all_items.count { |item| item["author_position"] == "first" }
   second_count = all_items.count { |item| item["author_position"] == "second" }
-  metrics = data.fetch("publications").fetch("metrics")
+  ads_metrics = data.fetch("publications").fetch("metrics").fetch("ads")
 
   lines = []
   lines << "\\begin{rSection}{Publications} %\\itemsep -3pt"
-  lines << "Summary: #{all_items.length} Total, #{first_count} first Author, #{second_count} second author: \\\\"
-  lines << "#{metrics['google_scholar']['citations']} citations, h-index: #{metrics['google_scholar']['h_index']} (\\href{#{metrics['google_scholar']['url']}}{Google Scholar}), #{metrics['ads']['citations']} citations h-index: #{metrics['ads']['h_index']} (\\href{#{metrics['ads']['url']}}{ADS}) \\\\"
+  lines << "Summary: #{peer_count} peer-reviewed papers and #{other_count} other scholarly publications/software records; #{first_count} first-author and #{second_count} second-author papers. \\\\"
+  lines << "#{ads_metrics['citations']} citations; h-index: #{ads_metrics['h_index']} (\\href{#{ads_metrics['url']}}{ADS}, accessed #{ads_metrics.fetch('accessed')}). \\\\"
   lines << "\\textbf{Peer Reviewed Publications}\\\\"
 
   groups.select { |group| group["classification"] == "peer_reviewed" }.each do |group|
@@ -169,7 +173,7 @@ def build_publications_tex(data)
     lines << ""
   end
 
-  lines << "\\textbf{Non-Peer reviewed Publications}"
+  lines << "\\textbf{Other Scholarly Publications and Software}"
   lines << "\\begin{revnumerate}"
   groups.select { |group| group["classification"] == "non_peer_reviewed" }.flat_map { |group| group.fetch("items") }.each do |publication|
     lines << publication_item_tex(publication).rstrip
@@ -198,9 +202,10 @@ end
 
 def build_site_data(data)
   publication_groups = data.fetch("publications").fetch("groups").map do |group|
+    item_label = group["classification"] == "peer_reviewed" ? "papers" : "records"
     {
       "title" => group.fetch("website_title"),
-      "meta" => "#{group.fetch('items').length} papers",
+      "meta" => "#{group.fetch('items').length} #{item_label}",
       "items" => group.fetch("items").map do |publication|
         {
           "badge" => publication.fetch("year").to_s,

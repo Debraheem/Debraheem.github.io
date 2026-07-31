@@ -1,8 +1,8 @@
 // Generated from data/site_cv.yaml by scripts/generate_site_cv.rb. Do not edit manually.
 window.siteData = {
   "statementParagraphsHtml": [
-    "I am a Postdoctoral Research Fellow at Yale University and a software developer involved in improving the Modules for Experiments in Stellar Astrophysics (MESA) sofware instrument. My research interests are broad, covering massive star evolution, neutrino emission, nuclear reaction rates, stellar opacity, classical pulsations, and 1D convection.",
-    "My work focuses on the maintenance and improvement of the <code>turb</code> (convection), <code>kap</code> (opacity), <code>rates</code> (nuclear reaction rates), and <code>net</code> (nuclear networks) modules and their associated test suites, including the massive star test cases. I am also an active member and primary maintainer of the public MESA mailing list, as well as a maintainer of the MESA Zenodo archive."
+    "I am a Postdoctoral Research Fellow at Yale University and a software developer involved in improving the Modules for Experiments in Stellar Astrophysics (MESA) software instrument. My research interests are broad, covering massive star evolution, neutrino emission, nuclear reaction rates, stellar opacity, classical pulsations, and 1D convection.",
+    "My work focuses on the maintenance and improvement of the <code>turb</code> (convection), <code>kap</code> (opacity), <code>rates</code> (nuclear reaction rates), and <code>net</code> (nuclear networks) modules and their associated test suites, including the massive star test cases. I am also an active member and primary maintainer of the public MESA-users mailing list, as well as a maintainer of the MESA Zenodo archive."
   ],
   "interests": [
     "Massive Star Evolution",
@@ -35,9 +35,9 @@ window.siteData = {
         {
           "badge": "2026",
           "title": "Self-Consistent Nonlinear Classical Cepheid Pulsations During Stellar Evolution with MESA",
-          "url": "https://arxiv.org/abs/2603.15766",
+          "url": "https://ui.adsabs.harvard.edu/abs/2026ApJ..1002..172F/abstract",
           "authorsHtml": "<strong>Farag, E.</strong>, Bellinger, E. P., Mocz, P., Kalici, S., Smolec, R., Kanbur, S., Bettwy, K., &amp; Lindsay, C.",
-          "venue": "The Astrophysical Journal, accepted (2026)"
+          "venue": "The Astrophysical Journal 1002, 172 (2026)"
         },
         {
           "badge": "2024",
@@ -76,30 +76,37 @@ window.siteData = {
         {
           "badge": "2026",
           "title": "Red-Giant Asteroseismology of Low-Mass Population III Stars",
-          "url": "https://arxiv.org/abs/2603.08804",
+          "url": "https://ui.adsabs.harvard.edu/abs/2026ApJ..1001...41F/abstract",
           "authorsHtml": "Ferreira, T., Bellinger, E. P., <strong>Farag, E.</strong>, &amp; Lindsay, C. J.",
-          "venue": "The Astrophysical Journal, accepted (2026)"
+          "venue": "The Astrophysical Journal 1001, 41 (2026)"
         },
         {
           "badge": "2026",
           "title": "Evolution of Low-Mass Population III Stars: Convection, Mass Loss, Nucleosynthesis, and Neutrinos",
-          "url": "https://arxiv.org/abs/2602.16082",
+          "url": "https://ui.adsabs.harvard.edu/abs/2026ApJ..1000..147F/abstract",
           "authorsHtml": "Ferreira, T., Bellinger, E. P., <strong>Farag, E.</strong>, &amp; Lindsay, C. J.",
-          "venue": "The Astrophysical Journal, accepted (2026)"
+          "venue": "The Astrophysical Journal 1000, 147 (2026)"
         },
         {
           "badge": "2026",
           "title": "Evolutionary Tracks and Spectral Properties of Quasi-stars and Their Correlation with Little Red Dots",
-          "url": "https://arxiv.org/abs/2510.17952",
+          "url": "https://ui.adsabs.harvard.edu/abs/2026ApJ...998L...4S/abstract",
           "authorsHtml": "Santarelli, A. D., <strong>Farag, E.</strong>, Bellinger, E. P., Natarajan, P., Naidu, R. P., Campbell, C. B., &amp; Caplan, M. E.",
-          "venue": "The Astrophysical Journal Letters, accepted (2026)"
+          "venue": "The Astrophysical Journal Letters 998, L4 (2026)"
         },
         {
           "badge": "2026",
-          "title": "MESA-QUEST: Tracing the formation of direct collapse black hole seeds via quasi-stars",
-          "url": "https://arxiv.org/abs/2510.11772",
+          "title": "MESA-QUEST: Tracing the Formation of Direct-collapse Black Hole Seeds via Quasi-stars",
+          "url": "https://ui.adsabs.harvard.edu/abs/2026ApJ...998..150S/abstract",
           "authorsHtml": "Santarelli, A. D., Campbell, C. B., <strong>Farag, E.</strong>, Bellinger, E. P., Natarajan, P., &amp; Caplan, M. E.",
-          "venue": "The Astrophysical Journal, accepted (2026)"
+          "venue": "The Astrophysical Journal 998, 150 (2026)"
+        },
+        {
+          "badge": "2026",
+          "title": "Massive Stellar Cannibals: How Stellar Mergers Drive Mass Loss in Extremely Massive Stars",
+          "url": "https://doi.org/10.1051/0004-6361/202557899",
+          "authorsHtml": "Roman-Garza, J., Fragos, T., Charbonnel, C., Ramírez-Galeano, L., Kruckow, M., &amp; <strong>Farag, E.</strong>",
+          "venue": "Astronomy & Astrophysics 707, A163 (2026)"
         },
         {
           "badge": "2025",
@@ -114,13 +121,6 @@ window.siteData = {
           "url": "https://doi.org/10.3847/1538-4365/ade717",
           "authorsHtml": "Grichener, A., Renzo, M., Kerzendorf, W. E., Farmer, R., de Mink, S. E., Bellinger, E. P., Chan, C. K., Chen, N., <strong>Farag, E.</strong>, et al.",
           "venue": "The Astrophysical Journal Supplement Series 279, 49 (2025)"
-        },
-        {
-          "badge": "2025",
-          "title": "Cosmic Massive Star Cannibals and Their Detectability with Gravitational Wave Observations",
-          "url": "https://arxiv.org/abs/2502.07665",
-          "authorsHtml": "Arca Sedda, M., Scolnic, D., Bortolas, E., Goel, A., Gration, N., Sagar, R., <strong>Farag, E.</strong>, et al.",
-          "venue": "arXiv:2502.07665 (2025)"
         },
         {
           "badge": "2024",
@@ -167,9 +167,30 @@ window.siteData = {
       ]
     },
     {
-      "title": "Non-Peer-Reviewed Publications",
-      "meta": "2 papers",
+      "title": "Other Scholarly Publications and Software",
+      "meta": "5 records",
       "items": [
+        {
+          "badge": "2026",
+          "title": "A Grid of Fast-rotating, Chemically Homogeneous Supernova and/or Long-GRB Progenitors",
+          "url": "https://arxiv.org/abs/2606.21824",
+          "authorsHtml": "Renzo, M., Gottlieb, O., Chan, H. S., Goldberg, J. A., Grichener, A., Sen, K., Shah, N., <strong>Farag, E.</strong>, &amp; Cantiello, M.",
+          "venue": "arXiv:2606.21824 (2026)"
+        },
+        {
+          "badge": "2026",
+          "title": "MESA-QUEST: MESA Quasi-star Evolutionary Simulation Toolkit",
+          "url": "https://ui.adsabs.harvard.edu/abs/2026ascl.soft04006S/abstract",
+          "authorsHtml": "Santarelli, A. D., Campbell, C. B., <strong>Farag, E.</strong>, et al.",
+          "venue": "Astrophysics Source Code Library, ascl:2604.006 (2026)"
+        },
+        {
+          "badge": "2025",
+          "title": "Cosmic Massive Star Cannibals and Their Detectability with Gravitational-wave Observations",
+          "url": "https://arxiv.org/abs/2502.07665",
+          "authorsHtml": "Arca Sedda, M., Scolnic, D., Bortolas, E., Goel, A., Gration, N., Sagar, R., <strong>Farag, E.</strong>, et al.",
+          "venue": "arXiv:2502.07665 (2025)"
+        },
         {
           "badge": "2021",
           "title": "Investigating Opacity Modifications and Reaction Rate Uncertainties to Resolve the Cepheid Mass Discrepancy",
@@ -188,6 +209,18 @@ window.siteData = {
     }
   ],
   "talks": [
+    {
+      "badge": "2026",
+      "title": "Nuclear Reactions in MESA",
+      "url": "https://www.astro.yale.edu/bellinger/meetings/2026/cenam/",
+      "location": "Invited Seminar • Yale/CeNAM Nuclear Asteroseismology Workshop, New Haven, CT"
+    },
+    {
+      "badge": "2026",
+      "title": "Classical Cepheid Pulsations in MESA-star",
+      "url": "https://mesastar.org/summer-school-2026/",
+      "location": "Invited Lecturer • MESA Summer School, Jackson, WY"
+    },
     {
       "badge": "2026",
       "title": "From Stellar Evolution to Pulsation: Post-Main Sequence Massive Star Pulsations",
