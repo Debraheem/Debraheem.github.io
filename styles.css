@@ -514,6 +514,55 @@ code {
   border-top: none;
 }
 
+.software-list {
+  margin: 0.85rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.software-item + .software-item {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
+
+.software-title {
+  margin: 0;
+  font-family: inherit;
+  font-size: 1.12rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.software-role,
+.software-description {
+  margin: 0.3rem 0 0;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.software-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.1rem;
+  margin-top: 0.55rem;
+  font-size: 0.95rem;
+}
+
+.software-links a {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  text-decoration-color: var(--soft);
+}
+
+.software-links a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
 .publication-top {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;

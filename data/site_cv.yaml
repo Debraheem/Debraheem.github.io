@@ -31,10 +31,10 @@ publications:
       h_index: 9
       url: "https://scholar.google.com/citations?user=uQxc1hMAAAAJ&hl=en"
     ads:
-      citations: 390
-      h_index: 10
-      accessed: "July 28, 2026"
-      url: "https://ui.adsabs.harvard.edu/search/filter_author_facet_hier_fq_author=OR&filter_author_facet_hier_fq_author=author_facet_hier%3A%221%2FFarag%2C%20E%2FFarag%2C%20Ebraheem%22&filter_author_facet_hier_fq_author=author_facet_hier%3A%221%2FFarag%2C%20E%2FFarag%2C%20E%22&fq=%7B!type%3Daqp%20v%3D%24fq_author%7D&fq_author=(author_facet_hier%3A%221%2FFarag%2C%20E%2FFarag%2C%20Ebraheem%22%20OR%20author_facet_hier%3A%221%2FFarag%2C%20E%2FFarag%2C%20E%22)&q=ebraheem%20farag&sort=date%20desc%2C%20bibcode%20desc&p_=0"
+      citations: 459
+      h_index: 11
+      accessed: "October 26, 2026"
+      url: "https://ui.adsabs.harvard.edu/search/filter_author_facet_hier_fq_author=OR&filter_author_facet_hier_fq_author=author_facet_hier%3A%221%2FFarag%2C%20E%2FFarag%2C%20Ebraheem%22&filter_author_facet_hier_fq_author=author_facet_hier%3A%221%2FFarag%2C%20E%2FFarag%2C%20E%22&fq=%7B!type%3Daqp%20v%3D%24fq_author%7D&fq_author=(author_facet_hier%3A%221%2FFarag%2C%20E%2FFarag%2C%20Ebraheem%22%20OR%20author_facet_hier%3A%221%2FFarag%2C%20E%2FFarag%2C%20E%22)&q=ebraheem%20farag%20year%3A2015-2026&sort=date%20desc%2C%20bibcode%20desc&p_=0"
   groups:
     - classification: "peer_reviewed"
       cv_label: "First Author Publications"
@@ -75,7 +75,8 @@ publications:
           volume: "968"
           page: "56"
         - title: "Stellar Neutrino Emission Across The Mass-Metallicity Plane"
-          link: "https://doi.org/10.3847/1538-4365/ad0787"
+          link: "https://ui.adsabs.harvard.edu/abs/2024ApJS..270....5F/abstract"
+          doi: "10.3847/1538-4365/ad0787"
           authors:
             - "Farag, E."
             - "Timmes, F. X."
@@ -90,7 +91,8 @@ publications:
           volume: "270"
           page: "5"
         - title: "Resolving the Peak of the Black Hole Mass Spectrum"
-          link: "https://doi.org/10.3847/1538-4357/ac8b83"
+          link: "https://ui.adsabs.harvard.edu/abs/2022ApJ...937..112F/abstract"
+          doi: "10.3847/1538-4357/ac8b83"
           authors:
             - "Farag, E."
             - "Renzo, M."
@@ -105,7 +107,8 @@ publications:
           volume: "937"
           page: "112"
         - title: "On Stellar Evolution in a Neutrino Hertzsprung-Russell Diagram"
-          link: "https://doi.org/10.3847/1538-4357/ab7f2c"
+          link: "https://ui.adsabs.harvard.edu/abs/2020ApJ...893..133F/abstract"
+          doi: "10.3847/1538-4357/ab7f2c"
           authors:
             - "Farag, E."
             - "Timmes, F. X."
@@ -119,10 +122,49 @@ publications:
           journal_long: "The Astrophysical Journal"
           volume: "893"
           page: "133"
+          website_venue: "The Astrophysical Journal 893, 133 (2020); erratum: 965, 192 (2024)"
+          cv_details: '2020, ApJ, 893, 133; \href{https://ui.adsabs.harvard.edu/abs/2024ApJ...965..192F/abstract}{Erratum: 2024, ApJ, 965, 192}'
     - classification: "peer_reviewed"
       cv_label: "Contributing Author Publications"
       website_title: "Contributing-Author Peer-Reviewed Publications"
       items:
+        - title: "A Grid of Fast-rotating, Chemically Homogeneous Supernova and/or Long-GRB Progenitors"
+          link: "https://ui.adsabs.harvard.edu/abs/2026arXiv260621824R/abstract"
+          authors:
+            - "Renzo, M."
+            - "Gottlieb, O."
+            - "Chan, H. S."
+            - "Goldberg, J. A."
+            - "Grichener, A."
+            - "Sen, K."
+            - "Shah, N."
+            - "Farag, E."
+            - "Cantiello, M."
+          author_position: "middle"
+          year: 2026
+          status: "accepted"
+          journal_short: "ApJS"
+          journal_long: "The Astrophysical Journal Supplement Series"
+          cv_details: "2026, ApJS, in press; arXiv:2606.21824"
+        - title: "Benchmarking Machine Learning Emulators of Stellar Evolution for Precision Asteroseismology"
+          link: "https://ui.adsabs.harvard.edu/abs/2026ApJ..1010...33G/abstract"
+          doi: "10.3847/1538-4357/aea14e"
+          authors:
+            - "Gluck, N."
+            - "Bellinger, E. P."
+            - "Liang, Y."
+            - "Farag, E."
+            - "Saunders, N."
+            - "Kalici, S."
+            - "Lindsay, C. J."
+            - "Basu, S."
+          author_position: "middle"
+          year: 2026
+          status: "published"
+          journal_short: "ApJ"
+          journal_long: "The Astrophysical Journal"
+          volume: "1010"
+          page: "33"
         - title: "Red-Giant Asteroseismology of Low-Mass Population III Stars"
           link: "https://ui.adsabs.harvard.edu/abs/2026ApJ..1001...41F/abstract"
           authors:
@@ -168,7 +210,7 @@ publications:
           journal_long: "The Astrophysical Journal Letters"
           volume: "998"
           page: "L4"
-        - title: "MESA-QUEST: Tracing the Formation of Direct-collapse Black Hole Seeds via Quasi-stars"
+        - title: "MESA-QUEST: Tracing the Formation of Direct Collapse Black Hole Seeds via Quasi-stars"
           link: "https://ui.adsabs.harvard.edu/abs/2026ApJ...998..150S/abstract"
           authors:
             - "Santarelli, A. D."
@@ -185,7 +227,8 @@ publications:
           volume: "998"
           page: "150"
         - title: "Massive Stellar Cannibals: How Stellar Mergers Drive Mass Loss in Extremely Massive Stars"
-          link: "https://doi.org/10.1051/0004-6361/202557899"
+          link: "https://ui.adsabs.harvard.edu/abs/2026A%26A...707A.163R/abstract"
+          doi: "10.1051/0004-6361/202557899"
           authors:
             - "Roman-Garza, J."
             - "Fragos, T."
@@ -201,7 +244,8 @@ publications:
           volume: "707"
           page: "A163"
         - title: "Solar-like Oscillations in Accreting Pre-main-sequence Stars: Insights and Prospects"
-          link: "https://doi.org/10.3847/1538-4357/ae1a78"
+          link: "https://ui.adsabs.harvard.edu/abs/2025ApJ...995..223J/abstract"
+          doi: "10.3847/1538-4357/ae1a78"
           authors:
             - "Jorgensen, J."
             - "Zwintz, K."
@@ -216,7 +260,8 @@ publications:
           volume: "995"
           page: "223"
         - title: "Nuclear Neural Networks: Emulating Late Burning Stages in Core-collapse Supernova Progenitors"
-          link: "https://doi.org/10.3847/1538-4365/ade717"
+          link: "https://ui.adsabs.harvard.edu/abs/2025ApJS..279...49G/abstract"
+          doi: "10.3847/1538-4365/ade717"
           authors:
             - "Grichener, A."
             - "Renzo, M."
@@ -227,7 +272,7 @@ publications:
             - "Chan, C. K."
             - "Chen, N."
             - "Farag, E."
-            - "et al."
+            - "Justham, S."
           author_position: "middle"
           year: 2025
           status: "published"
@@ -235,12 +280,14 @@ publications:
           journal_long: "The Astrophysical Journal Supplement Series"
           volume: "279"
           page: "49"
-        - title: "Photons from neutrinos: The gamma ray echo of a supernova neutrino burst"
-          link: "https://doi.org/10.3847/1538-4357/ad4546"
+        - title: "Photons from Neutrinos: The Gamma-Ray Echo of a Supernova Neutrino Burst"
+          link: "https://ui.adsabs.harvard.edu/abs/2024ApJ...969..149L/abstract"
+          doi: "10.3847/1538-4357/ad4546"
           authors:
             - "Lunardini, C."
             - "Loeffler, J."
             - "Mukhopadhyay, M."
+            - "Hurley, M. J."
             - "Farag, E."
             - "Timmes, F. X."
           author_position: "middle"
@@ -252,7 +299,8 @@ publications:
           page: "149"
         - title: "Seismic Signatures of the 12C(alpha, gamma)16O Reaction Rate in White Dwarf Models with Overshooting"
           title_tex: 'Seismic Signatures of the $^{12}$C($\alpha$, $\gamma$)$^{16}$O Reaction Rate in White Dwarf Models with Overshooting'
-          link: "https://doi.org/10.3847/1538-4357/ace620"
+          link: "https://ui.adsabs.harvard.edu/abs/2023ApJ...954...51C/abstract"
+          doi: "10.3847/1538-4357/ace620"
           authors:
             - "Chidester, M. T."
             - "Timmes, F. X."
@@ -265,7 +313,8 @@ publications:
           volume: "954"
           page: "51"
         - title: "JWST Imaging of Earendel, the Extremely Magnified Star at Redshift z = 6.2"
-          link: "https://doi.org/10.3847/2041-8213/ac9d39"
+          link: "https://ui.adsabs.harvard.edu/abs/2022ApJ...940L...1W/abstract"
+          doi: "10.3847/2041-8213/ac9d39"
           authors:
             - "Welch, B."
             - "Coe, D."
@@ -308,7 +357,8 @@ publications:
           page: "L1"
         - title: "On Trapped Modes in Variable White Dwarfs as Probes of the 12C(alpha, gamma)16O Reaction Rate"
           title_tex: 'On Trapped Modes in Variable White Dwarfs as Probes of the $^{12}$C($\alpha$, $\gamma$)$^{16}$O Reaction Rate'
-          link: "https://doi.org/10.3847/1538-4357/ac7ec3"
+          link: "https://ui.adsabs.harvard.edu/abs/2022ApJ...935...21C/abstract"
+          doi: "10.3847/1538-4357/ac7ec3"
           authors:
             - "Chidester, M. T."
             - "Farag, E."
@@ -321,7 +371,8 @@ publications:
           volume: "935"
           page: "21"
         - title: "Observing Intermediate-mass Black Holes and the Upper Stellar-mass Gap with LIGO and Virgo"
-          link: "https://doi.org/10.3847/1538-4357/ac3130"
+          link: "https://ui.adsabs.harvard.edu/abs/2022ApJ...924...39M/abstract"
+          doi: "10.3847/1538-4357/ac3130"
           authors:
             - "Mehta, A. K."
             - "Buonanno, A."
@@ -340,7 +391,8 @@ publications:
           page: "39"
         - title: "On the Impact of 22Ne on the Pulsation Periods of Carbon-Oxygen White Dwarfs with Helium-dominated Atmospheres"
           title_tex: 'On the Impact of $^{22}$Ne on the Pulsation Periods of Carbon-Oxygen White Dwarfs with Helium-dominated Atmospheres'
-          link: "https://doi.org/10.3847/1538-4357/abdec4"
+          link: "https://ui.adsabs.harvard.edu/abs/2021ApJ...910...24C/abstract"
+          doi: "10.3847/1538-4357/abdec4"
           authors:
             - "Chidester, M. T."
             - "Timmes, F. X."
@@ -359,88 +411,109 @@ publications:
           volume: "910"
           page: "24"
     - classification: "non_peer_reviewed"
-      website_title: "Other Scholarly Publications and Software"
+      website_title: "Other Scholarly Publications"
       items:
-        - title: "A Grid of Fast-rotating, Chemically Homogeneous Supernova and/or Long-GRB Progenitors"
-          link: "https://arxiv.org/abs/2606.21824"
-          authors:
-            - "Renzo, M."
-            - "Gottlieb, O."
-            - "Chan, H. S."
-            - "Goldberg, J. A."
-            - "Grichener, A."
-            - "Sen, K."
-            - "Shah, N."
-            - "Farag, E."
-            - "Cantiello, M."
-          author_position: "middle"
-          year: 2026
-          status: "preprint"
-          note: "arXiv:2606.21824"
-          website_venue: "arXiv:2606.21824 (2026)"
-          cv_details: "2026, arXiv:2606.21824"
-        - title: "MESA-QUEST: MESA Quasi-star Evolutionary Simulation Toolkit"
-          link: "https://ui.adsabs.harvard.edu/abs/2026ascl.soft04006S/abstract"
-          authors:
-            - "Santarelli, A. D."
-            - "Campbell, C. B."
-            - "Farag, E."
-            - "et al."
-          author_position: "middle"
-          year: 2026
-          status: "published"
-          website_venue: "Astrophysics Source Code Library, ascl:2604.006 (2026)"
-          cv_details: "2026, Astrophysics Source Code Library, ascl:2604.006"
-        - title: "Cosmic Massive Star Cannibals and Their Detectability with Gravitational-wave Observations"
-          link: "https://arxiv.org/abs/2502.07665"
-          authors:
-            - "Arca Sedda, M."
-            - "Scolnic, D."
-            - "Bortolas, E."
-            - "Goel, A."
-            - "Gration, N."
-            - "Sagar, R."
-            - "Farag, E."
-            - "et al."
-          author_position: "middle"
-          year: 2025
-          status: "preprint"
-          note: "arXiv:2502.07665"
-          website_venue: "arXiv:2502.07665 (2025)"
-          cv_details: "2025, arXiv:2502.07665"
         - title: "Investigating Opacity Modifications and Reaction Rate Uncertainties to Resolve the Cepheid Mass Discrepancy"
-          link: "https://doi.org/10.48550/arXiv.2002.04073"
+          link: "https://ui.adsabs.harvard.edu/abs/2021ASPC..529...79G/abstract"
+          doi: "10.48550/arXiv.2002.04073"
           authors:
             - "Guzik, J. A."
             - "Farag, E."
             - "Ostrowski, J."
-            - "et al."
+            - "Evans, N. R."
+            - "Neilson, H."
+            - "Moschou, S."
+            - "Drake, J. J."
           author_position: "second"
           year: 2021
           status: "published"
           website_venue: "Astronomical Society of the Pacific Conference Series 529, 79 (2021)"
           cv_details: "2021, in Astronomical Society of the Pacific Conference Series, Vol. 529, RR Lyrae/Cepheid 2019: Frontiers of Classical Pulsators, ed. K. Kinemuchi, C. Lovekin, H. Neilson, \\& K. Vivas, 79"
         - title: "Sound speed and oscillation frequencies for solar models evolved with Los Alamos ATOMIC opacities"
-          link: "https://doi.org/10.1017/S1743921316006062"
+          link: "https://ui.adsabs.harvard.edu/abs/2016IAUFM..29B.532G/abstract"
+          doi: "10.1017/S1743921316006062"
           authors:
             - "Guzik, J. A."
             - "Fontes, C. J."
             - "Walczak, P."
-            - "et al."
+            - "Wood, S. R."
+            - "Mussack, K."
+            - "Farag, E."
           author_position: "middle"
           year: 2016
           status: "published"
-          website_venue: "IAU Focus Meeting 29B, 532 (2016)"
-          cv_details: "2016, IAU Focus Meeting, 29B, 532"
+          website_venue: "IAU Focus Meeting 29B, 532-535 (2016)"
+          cv_details: "2016, IAU Focus Meeting, 29B, 532--535"
+
+software:
+  - title: "MESA: Modules for Experiments in Stellar Astrophysics"
+    link: "https://docs.mesastar.org/en/latest/about.html"
+    website_title: "MESA"
+    website_role: "Maintainer and developer, 2023-present"
+    website_description: "Modules for Experiments in Stellar Astrophysics."
+    website_links:
+      - label: "Source code"
+        url: "https://github.com/MESAHub/mesa"
+      - label: "Documentation"
+        url: "https://docs.mesastar.org/"
+    role: "Maintainer and developer"
+    year: 2023
+    year_label: "2023-present"
+    status: "published"
+    website_venue: "Open-source stellar evolution software"
+    cv_details: "2023--present"
+  - title: "pyfortmesa"
+    link: "https://pypi.org/project/pyfortmesa/"
+    website_role: "Creator and maintainer"
+    website_description: "Python wrappers for selected MESA microphysics routines."
+    website_links:
+      - label: "Source code"
+        url: "https://github.com/Debraheem/pyfortmesa"
+      - label: "Documentation"
+        url: "https://debraheem.github.io/pyfortmesa/"
+      - label: "PyPI package"
+        url: "https://pypi.org/project/pyfortmesa/"
+    authors:
+      - "Farag, E."
+    year: 2026
+    status: "published"
+    website_venue: "Software, version 0.6.0 (2026)"
+    cv_details: "2026, software, version 0.6.0"
+  - title: "MESA-QUEST: MESA Quasi-star Evolutionary Simulation Toolkit"
+    link: "https://ui.adsabs.harvard.edu/abs/2026ascl.soft04006S/abstract"
+    website_title: "MESA-QUEST"
+    website_role: "Software coauthor"
+    website_description: "MESA Quasi-star Evolutionary Simulation Toolkit."
+    website_links:
+      - label: "Source code"
+        url: "https://github.com/andysantarelli/MESA-QUEST"
+      - label: "ASCL record"
+        url: "https://ascl.net/2604.006"
+    authors:
+      - "Santarelli, A. D."
+      - "Campbell, C. B."
+      - "Farag, E."
+      - "Bellinger, E. P."
+      - "Natarajan, P."
+      - "Caplan, M. E."
+    year: 2026
+    status: "published"
+    website_venue: "Astrophysics Source Code Library, ascl:2604.006 (2026)"
+    cv_details: "2026, Astrophysics Source Code Library, ascl:2604.006"
 
 talks:
+  - title: "Nuclear Physics Seminar (title TBA)"
+    link: "https://physics.nd.edu/news-events/events/2026/11/23/nuclear-physics-seminar-dr-ebraheem-farag-yale-university/"
+    kind: "Invited Seminar (scheduled)"
+    location: "University of Notre Dame, Notre Dame, IN; November 23"
+    year: 2026
   - title: "Nuclear Reactions in MESA"
     link: "https://www.astro.yale.edu/bellinger/meetings/2026/cenam/"
-    kind: "Invited Seminar"
+    kind: "Invited Keynote"
     location: "Yale/CeNAM Nuclear Asteroseismology Workshop, New Haven, CT"
     year: 2026
   - title: "Classical Cepheid Pulsations in MESA-star"
-    link: "https://mesastar.org/summer-school-2026/"
+    link: "https://mesastar.org/summer-school-2026/agenda/"
     kind: "Invited Lecturer"
     location: "MESA Summer School, Jackson, WY"
     year: 2026
@@ -459,6 +532,16 @@ talks:
     kind: "Invited Colloquium"
     location: "Yale Astronomy Colloquium"
     year: 2025
+  - title: "On Stellar Neutrino Emission Across the Mass-Metallicity Plane"
+    link: "https://baas.aas.org/pub/2024n2i116p06/release/1"
+    kind: "Contributed Presentation"
+    location: "243rd American Astronomical Society Meeting, New Orleans, LA"
+    year: 2024
+    citation_authors:
+      - "Farag, E."
+      - "Timmes, F."
+      - "Chidester, M."
+    citation_details: "2024, Bulletin of the American Astronomical Society, 56(2), 116.06"
   - title: "Neutrino Emission from Stars"
     link: "https://ui.adsabs.harvard.edu/abs/2023HEAD...2011520F/abstract"
     kind: "Contributed Poster"
@@ -494,7 +577,7 @@ talks:
       - "Timmes, F."
     citation_details: "2023, in American Astronomical Society Meeting Abstracts, Vol. 55, American Astronomical Society Meeting Abstracts, 259.04"
   - title: "Recurrent Novae and Steady Burning"
-    link: "https://mesahub.github.io/summer-school-2022/"
+    link: "https://mesastar.org/summer-school-2022/agenda/"
     kind: "Invited Lecturer"
     location: "(MESA) Summer School, Santa Barbara, CA"
     year: 2022
@@ -510,6 +593,11 @@ talks:
       - "Chidester, M."
       - "Timmes, F."
     citation_details: "2022"
+  - title: "On Stellar Evolution in a Neutrino Hertzsprung-Russell Diagram"
+    link: "https://agenda.infn.it/event/25879/attachments/79032/102584/timetable.pdf"
+    kind: "Contributed Flash Talk"
+    location: "XIX International Workshop on Neutrino Telescopes, online; February 19"
+    year: 2021
   - title: "Exploring The Black hole Mass Gap With Revised Nuclear Reaction Rates"
     link: "https://ui.adsabs.harvard.edu/abs/2021AAS...23752403F/abstract"
     kind: "Contributed Poster"
@@ -519,17 +607,9 @@ talks:
       - "Farag, E."
       - "Timmes, F."
     citation_details: "2021, in American Astronomical Society Meeting Abstracts, Vol. 53, American Astronomical Society Meeting Abstracts, 524.03"
-  - title: "Is There A Solar Model Solution to The Faint Young Sun Paradox?"
-    link: "https://doi.org/10.2172/1545733"
-    kind: "Invited Seminar"
-    location: "Los Alamos Distinguished Seminar Series, Los Alamos, NM"
-    year: 2019
-    citation_authors:
-      - "Farag, E. K."
-    citation_details: "2019"
   - title: "Modeling Cepheid Variable Stars Using the Open-Source MESA Code"
     link: "https://ui.adsabs.harvard.edu/abs/2020JAVSO..48..102G/abstract"
-    kind: "Contributed Talk"
+    kind: "Coauthored Abstract"
     location: "The Journal of the American Association of Variable Star Observers"
     year: 2020
     citation_authors:
@@ -539,24 +619,32 @@ talks:
       - "et al."
     citation_details: "2020, The Journal of the American Association of Variable Star Observers, vol. 48, no. 1, p. 102"
   - title: "Modeling Pulsations of Cepheid Variables using the Open-Source MESA Code"
-    link: "https://ui.adsabs.harvard.edu/abs/2020anms.conf....5G/abstract"
-    kind: "Contributed Talk"
-    location: "The 35th Annual New Mexico Symposium"
+    link: "https://www.aoc.nrao.edu/events/nmsymposium/2019/contributions/abstract-book.pdf"
+    kind: "Coauthored Talk"
+    location: "35th Annual New Mexico Symposium; presented by J. A. Guzik"
     year: 2020
     citation_authors:
       - "Guzik, J. A."
       - "Farag, E."
       - "Ostrowski, J."
       - "et al."
-    citation_details: "2020, in The 35th Annual New Mexico Symposium, ed. A. D. Kapinska, 5"
+    citation_details: "2020, in The 35th Annual New Mexico Symposium, ed. A. D. Kapinska, 5; presented by J. A. Guzik"
+  - title: "Is There A Solar Model Solution to The Faint Young Sun Paradox?"
+    link: "https://doi.org/10.2172/1545733"
+    kind: "Invited Seminar"
+    location: "Los Alamos Distinguished Seminar Series, Los Alamos, NM"
+    year: 2019
+    citation_authors:
+      - "Farag, E. K."
+    citation_details: "2019"
   - title: "A diffusive radiation hydrodynamics code, xRage, is implemented to compare radiation flow with experimental data from the Omega laser facility"
-    link: "https://ui.adsabs.harvard.edu/abs/2015APS..DPPUP2023V/abstract"
-    kind: "Contributed Poster"
+    link: "https://meetings.aps.org/Meeting/DPP15/Session/UP12.23"
+    kind: "Coauthored Poster Abstract"
     location: "APS Division of Plasma Physics Meeting Abstracts"
     year: 2015
     citation_authors:
-      - "Vandervort, R."
+      - "VanDervort, R."
       - "Elgin, L."
       - "Farag, E."
       - "et al."
-    citation_details: "2015, in APS Meeting Abstracts, Vol. 2015, APS Division of Plasma Physics Meeting Abstracts, UP12.023"
+    citation_details: "2015, Bulletin of the American Physical Society, 60(19), UP12.00023"

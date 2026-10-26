@@ -1,7 +1,24 @@
 .DS_Store
 dist/
+
+# Private applications, drafts, and local notes
 do_not_commit/
 tmp/
+local_notes/
+.local-notes/
+*.local.md
+*.local.txt
+*_worklog.md
+
+# Local agent instructions and state
+AGENTS.md
+.agents/
+.codex/
+
+# Editor backups and swap files
+*~
+*.swp
+*.swo
 
 # LaTeX build artifacts
 CV/Ebraheem_CV/*.aux
@@ -10,3 +27,4 @@ CV/Ebraheem_CV/*.fls
 CV/Ebraheem_CV/*.log
 CV/Ebraheem_CV/*.out
 CV/Ebraheem_CV/*.synctex.gz
+CV/Ebraheem_CV/*.toc

@@ -15,9 +15,8 @@ function renderSimpleList(containerId, items) {
   container.innerHTML = items.map((item) => `<li>${item}</li>`).join("");
 }
 
-function renderPublicationGroups() {
-  const container = document.getElementById("publication-groups");
-  const publicationGroups = siteData.publicationGroups;
+function renderPublicationGroups(containerId, publicationGroups) {
+  const container = document.getElementById(containerId);
   if (!container) return;
   if (!Array.isArray(publicationGroups)) return;
 
@@ -25,7 +24,7 @@ function renderPublicationGroups() {
     .map(
       (group) => `
         <section class="publication-group">
-          <h3>${group.title}</h3>
+          ${group.title ? `<h3>${group.title}</h3>` : ""}
           <p class="publication-meta">${group.meta}</p>
           <ul class="publication-list">
             ${group.items
@@ -79,8 +78,32 @@ function renderTalks() {
     .join("");
 }
 
+function renderSoftware() {
+  const container = document.getElementById("software-list");
+  const software = siteData.software;
+  if (!container || !Array.isArray(software)) return;
+
+  container.innerHTML = software
+    .map(
+      (project) => `
+        <li class="software-item">
+          <h3 class="software-title">${project.title}</h3>
+          <p class="software-role">${project.role}</p>
+          <p class="software-description">${project.description}</p>
+          <div class="software-links">
+            ${project.links
+              .map((link) => `<a href="${link.url}">${link.label}</a>`)
+              .join("")}
+          </div>
+        </li>
+      `
+    )
+    .join("");
+}
+
 renderStatement();
 renderSimpleList("interests-list", siteData.interests);
 renderSimpleList("students-list", siteData.studentsMentored);
-renderPublicationGroups();
+renderPublicationGroups("publication-groups", siteData.publicationGroups);
+renderSoftware();
 renderTalks();

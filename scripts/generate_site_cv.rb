@@ -121,7 +121,8 @@ def publication_item_tex(publication)
               tex_escape(publication_cv_details(publication))
             end
 
-  "\\item #{title}\n\\\\ #{authors_tex(publication.fetch('authors'))} #{details}\n"
+  contributors = publication["role"] ? tex_escape(publication["role"]) : authors_tex(publication.fetch("authors"))
+  "\\item #{title}\n\\\\ #{contributors} #{details}\n"
 end
 
 def talk_item_tex(talk)
@@ -131,7 +132,8 @@ def talk_item_tex(talk)
             tex_escape(talk["title"])
           end
 
-  lines = ["\\item #{title} \\hfill {\\em #{tex_escape(talk.fetch('kind'))}}"]
+  lines = ["\\Needspace{5\\baselineskip}"]
+  lines << "\\item \\parbox[t]{0.74\\linewidth}{#{title}}\\hfill \\parbox[t]{0.24\\linewidth}{\\raggedleft\\em #{tex_escape(talk.fetch('kind'))}}"
 
   if talk["citation_authors"]
     lines << "\\\\ #{authors_tex(talk.fetch('citation_authors'))} #{tex_escape(talk.fetch('citation_details'))}"
@@ -147,18 +149,20 @@ end
 
 def build_publications_tex(data)
   groups = data.fetch("publications").fetch("groups")
-  all_items = groups.flat_map { |group| group.fetch("items") }
-  peer_count = groups.select { |group| group["classification"] == "peer_reviewed" }
-                     .sum { |group| group.fetch("items").length }
+  peer_items = groups.select { |group| group["classification"] == "peer_reviewed" }
+                     .flat_map { |group| group.fetch("items") }
+  peer_count = peer_items.length
+  accepted_count = peer_items.count { |item| item["status"] == "accepted" }
   other_count = groups.select { |group| group["classification"] == "non_peer_reviewed" }
                       .sum { |group| group.fetch("items").length }
-  first_count = all_items.count { |item| item["author_position"] == "first" }
-  second_count = all_items.count { |item| item["author_position"] == "second" }
+  first_count = peer_items.count { |item| item["author_position"] == "first" }
+  second_count = peer_items.count { |item| item["author_position"] == "second" }
   ads_metrics = data.fetch("publications").fetch("metrics").fetch("ads")
 
   lines = []
   lines << "\\begin{rSection}{Publications} %\\itemsep -3pt"
-  lines << "Summary: #{peer_count} peer-reviewed papers and #{other_count} other scholarly publications/software records; #{first_count} first-author and #{second_count} second-author papers. \\\\"
+  lines << "Summary: #{peer_count} peer-reviewed papers (#{accepted_count} accepted) and #{other_count} other scholarly publications. \\\\"
+  lines << "#{first_count} first-author and #{second_count} second-author peer-reviewed papers. \\\\"
   lines << "#{ads_metrics['citations']} citations; h-index: #{ads_metrics['h_index']} (\\href{#{ads_metrics['url']}}{ADS}, accessed #{ads_metrics.fetch('accessed')}). \\\\"
   lines << "\\textbf{Peer Reviewed Publications}\\\\"
 
@@ -173,7 +177,7 @@ def build_publications_tex(data)
     lines << ""
   end
 
-  lines << "\\textbf{Other Scholarly Publications and Software}"
+  lines << "\\textbf{Other Scholarly Publications}"
   lines << "\\begin{revnumerate}"
   groups.select { |group| group["classification"] == "non_peer_reviewed" }.flat_map { |group| group.fetch("items") }.each do |publication|
     lines << publication_item_tex(publication).rstrip
@@ -185,8 +189,24 @@ def build_publications_tex(data)
   lines.join("\n")
 end
 
+def build_software_tex(data)
+  lines = []
+  lines << "\\Needspace{6\\baselineskip}"
+  lines << "\\begin{rSection}{Software}"
+  lines << "\\begin{revnumerate}"
+  data.fetch("software").each do |software|
+    lines << publication_item_tex(software).rstrip
+    lines << ""
+  end
+  lines << "\\end{revnumerate}"
+  lines << "\\end{rSection}"
+  lines << ""
+  lines.join("\n")
+end
+
 def build_talks_tex(data)
   lines = []
+  lines << "\\Needspace{6\\baselineskip}"
   lines << "\\begin{rSection}{Presentations \\& Invited Talks}"
   lines << "\\begin{revnumerate}"
   lines << ""
@@ -200,21 +220,23 @@ def build_talks_tex(data)
   lines.join("\n")
 end
 
+def publication_site_item(publication)
+  {
+    "badge" => publication["year_label"] || publication.fetch("year").to_s,
+    "title" => publication.fetch("title"),
+    "url" => publication.fetch("link"),
+    "authorsHtml" => publication["role"] ? html_escape(publication["role"]) : authors_html(publication.fetch("authors")),
+    "venue" => publication_website_venue(publication)
+  }
+end
+
 def build_site_data(data)
   publication_groups = data.fetch("publications").fetch("groups").map do |group|
     item_label = group["classification"] == "peer_reviewed" ? "papers" : "records"
     {
       "title" => group.fetch("website_title"),
       "meta" => "#{group.fetch('items').length} #{item_label}",
-      "items" => group.fetch("items").map do |publication|
-        {
-          "badge" => publication.fetch("year").to_s,
-          "title" => publication.fetch("title"),
-          "url" => publication.fetch("link"),
-          "authorsHtml" => authors_html(publication.fetch("authors")),
-          "venue" => publication_website_venue(publication)
-        }
-      end
+      "items" => group.fetch("items").map { |publication| publication_site_item(publication) }
     }
   end
 
@@ -236,6 +258,14 @@ def build_site_data(data)
     "interests" => data.fetch("site").fetch("interests"),
     "studentsMentored" => data.fetch("site").fetch("students_mentored"),
     "publicationGroups" => publication_groups,
+    "software" => data.fetch("software").map do |software|
+      {
+        "title" => software["website_title"] || software.fetch("title"),
+        "role" => software.fetch("website_role"),
+        "description" => software.fetch("website_description"),
+        "links" => software.fetch("website_links")
+      }
+    end,
     "talks" => talks
   }
 end
@@ -252,4 +282,5 @@ JS
 
 write_file(ROOT.join("site-data.js"), site_data_js)
 write_file(ROOT.join("CV/Ebraheem_CV/generated_publications.tex"), build_publications_tex(DATA))
+write_file(ROOT.join("CV/Ebraheem_CV/generated_software.tex"), build_software_tex(DATA))
 write_file(ROOT.join("CV/Ebraheem_CV/generated_presentations.tex"), build_talks_tex(DATA))
